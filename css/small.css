@@ -1,0 +1,226 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 0.8rem 1rem;
+  }
+
+  body {
+    display: grid;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+    line-height: 1.2;
+    white-space: normal;
+    word-break: break-word;
+    text-align: left;
+    margin: 0;
+    max-width: 10rem;
+  }
+
+  #navMenu {
+    padding-left: 2rem;
+  }
+
+  nav ul {
+    display: none; /* Forzamos que siempre esté visible */
+    width: 100%;
+    gap: 0;
+    background-color: var(--secondary-color);
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+
+  nav ul.show {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+  }
+
+ nav ul li {
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+
+  nav ul li a {
+    padding: 0.4rem;
+    display: block;
+    font-size: 1rem;
+  }
+
+  .menu-theme {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+  }
+
+  #menuToggle {
+    display: block;
+    background: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+
+  #themeToggle img {
+    width: 30px;
+    height: auto;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .hero img {
+    height: 140px;
+    object-position: center bottom;
+  }
+
+  .cta-button {
+    bottom: 20px;
+    right: 50px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* MAIN */
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .info-panels {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .info-panels .card {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .card {
+    margin: 0 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  #weather-card,
+  #forecast-card {
+    min-height: 140px;
+  }
+
+  #forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .forecast-card {
+    flex: 1;
+    min-width: 90px;
+    background: var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .weather-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .events {
+    grid-column: auto;
+  }
+
+  .weather-text p {
+    font-size: 1.6rem;
+  }
+
+  #directory.grid {
+    gap: 0.5rem;
+  }
+
+  .directory-card {
+    width: 96%;
+  }
+
+  .logo-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .business-info p {
+    font-size: 1rem;
+  }
+
+  footer {
+    justify-content: center;
+    text-align: start;
+    align-items: start;
+  }
+
+  .footer-right,
+  .footer-left {
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    max-width: none;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .footer-social img {
+    width: 40px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}

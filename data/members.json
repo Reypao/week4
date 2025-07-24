@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Pinecrest Marketing Solutions",
+    "address": "1200 Oak Valley Drive, Austin, TX 73301",
+    "phone": "(512) 555-0213",
+    "email": "info@pinecrestmarketing.com",
+    "website": "https://pinecrestmarketing.com",
+    "image": "pinecrest_logo.png",
+    "membership": "Gold",
+    "other_info": "Specializes in SEO and social media strategy."
+  },
+  {
+    "name": "Evergreen Landscapes",
+    "address": "582 Willow Bend Rd, Denver, CO 80203",
+    "phone": "(303) 555-4812",
+    "email": "hello@evergreenlandscapes.co",
+    "website": "https://evergreenlands.com",
+    "image": "evergreen_icon.png",
+    "membership": "Silver",
+    "other_info": "Award-winning landscaping."
+  },
+  {
+    "name": "TechBridge IT Solutions",
+    "address": "890 Innovation Way, San Jose, CA 95134",
+    "phone": "(408) 555-9922",
+    "email": "support@techbridgeit.com",
+    "website": "https://techbridgeit.com",
+    "image": "techbridge_logo.png",
+    "membership": "Gold",
+    "other_info": "Cloud services, cybersecurity, and IT consulting."
+  },
+  {
+    "name": "Bluebird Café & Bakery",
+    "address": "76 Main Street, Asheville, NC 28801",
+    "phone": "(828) 555-1298",
+    "email": "hello@bluebirdcafe.com",
+    "website": "https://bluebirdcafe.com",
+    "image": "bluebird_cafe.jpg",
+    "membership": "Bronze",
+    "other_info": "Artisan pastries and weekend brunch."
+  },
+  {
+    "name": "Summit Fitness Club",
+    "address": "220 Peak Ave, Boulder, CO 80301",
+    "phone": "(720) 555-7644",
+    "email": "info@summitfitness.co",
+    "website": "https://summitfitness.co",
+    "image": "summit_fitness_icon.png",
+    "membership": "Silver",
+    "other_info": "Personal and group training, wellness coaching."
+  },
+  {
+    "name": "Cascade Legal Group",
+    "address": "101 First Avenue, Seattle, WA 98101",
+    "phone": "(206) 555-7711",
+    "email": "contact@cascadelegal.com",
+    "website": "https://cascadelegal.com",
+    "image": "cascade_legal_logo.png",
+    "membership": "Gold",
+    "other_info": "Firm specializing in business law and contracts."
+  },
+  {
+    "name": "NorthStar Real Estate",
+    "address": "4500 Skyline Blvd, Salt Lake City, UT 84103",
+    "phone": "(801) 555-2233",
+    "email": "sales@northstarhomes.com",
+    "website": "https://northstarhomes.com",
+    "image": "northstar_logo.png",
+    "membership": "Bronze",
+    "other_info": "Real estate with local market expertise."
+  }
+]
