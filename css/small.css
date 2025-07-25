@@ -33,7 +33,7 @@
   }
 
   nav ul {
-    display: none; /* Forzamos que siempre esté visible */
+    display: none;
     width: 100%;
     gap: 0;
     background-color: var(--secondary-color);
@@ -47,7 +47,7 @@
     width: 100%;
   }
 
- nav ul li {
+  nav ul li {
     width: 100%;
     border-top: 1px solid #ccc;
   }
@@ -222,5 +222,50 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 0.5rem;
+  }
+
+  /* ---------
+    JOIN PAGE
+  ----------- */
+  .join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .join-image img {
+    height: auto;
+    max-height: 200px;
+    border-radius: 6px;
+  }
+
+  .join-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .membership-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .membership-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .membership-card p {
+    font-size: 1rem;
+  }
+
+  form button {
+    width: 100%;
+    align-self: center;
   }
 }

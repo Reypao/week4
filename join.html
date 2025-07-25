@@ -34,7 +34,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html" class="active">Join</a></li> <!-- join page add it -->
+          <li><a href="join.html" class="active">Join</a></li>
           <li><a href="#">Discover</a></li>
         </ul>
       </nav>
@@ -52,87 +52,103 @@
   <!-- Main Content -->
   <main>
     <h2>Join</h2>
-    <h3>Membership Application</h3>
-    <div>
-      <!-- Application form -->
-      <form action="thankyou.html" method="get">
-        <label>First Name:</label>
-        <input type="text" name="fname" title="First Name" required>
+    <div class="join-layout">
+      <div class="join-image">
+        <img src="images/welcomesandy.jpg" alt="Welcome Sandy">
+      </div>
+      <div class="join-content">
+        <div class="form-container">
+          <h3 style="text-align: center;">Membership Application</h3>
+          <form action="thankyou.html" method="get">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" title="First Name" required>
 
-        <label>Last Name:</label>
-        <input type="text" name="lname" title="Last Name" required>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" title="Last Name" required>
 
-        <label>Organization Title</Title>:</label>
-        <input type="text" name="orgtitle" title="Organizational Title" required>
+            <label for="orgtitle">Organization Title:</label>
+            <input type="text" name="orgtitle" id="orgtitle" title="Organizational Title" required>
 
-        <label>Email:</label>
-        <input type="email" name="email" title="Email" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" title="Email" required>
 
-        <label>Mobile Phone:</label>
-        <input type="tel" name="phone" title="Cell Phone" required>
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" name="phone" id="phone" title="Cell Phone" required>
 
-        <label>Business - Organization Name:</label>
-        <input type="text" name="organization" title="Organization" required>
+            <label for="organization">Business - Organization Name:</label>
+            <input type="text" name="organization" id="organization" title="Organization" required>
 
-        <label>Business - Organization Description:</label>
-        <textarea name="description" title="Business Description" rows="4">
-          </textarea>
+            <label for="description">Business - Organization Description:</label>
+            <textarea name="description" id="description" title="Business Description" rows="4"></textarea>
 
-        <label>Membership Level:</label>
-        <select name="membership" title="Membership Level">
-          <option value="">--select--</option>
-          <option value="Np">Np Membership Free</option>
-          <option value="Bronze">Bronze Membership</option>
-          <option value="Silver">Silver Membership</option>
-          <option value="Gold">Gold Membership</option>
-        </select>
-      </form>
+            <label for="membership">Membership Level:</label>
+            <select name="membership" id="membership" title="Membership Level" required>
+              <option value="">-- Select --</option>
+              <option value="NP">NP Membership Free</option>
+              <option value="Bronze">Bronze Membership</option>
+              <option value="Silver">Silver Membership</option>
+              <option value="Gold">Gold Membership</option>
+            </select>
 
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <button type="submit">Submit Application</button>
+          </form>
+        </div>
+
+        <!-- Membership cards -->
+        <aside class="membership-cards">
+          <div class="membership-card" id="np-card">
+            <h3>NP Membership</h3>
+            <p>Perfect for non-profits. Free membership with limited perks.</p>
+            <a href="#np-modal">More Info</a>
+          </div>
+          <div class="membership-card" id="bronze-card">
+            <h3>Bronze Membership</h3>
+            <p>Basic membership benefits for small businesses.</p>
+            <a href="#bronze-modal">More Info</a>
+          </div>
+          <div class="membership-card" id="silver-card">
+            <h3>Silver Membership</h3>
+            <p>Enhanced benefits including advertising perks.</p>
+            <a href="#silver-modal">More Info</a>
+          </div>
+          <div class="membership-card" id="gold-card">
+            <h3>Gold Membership</h3>
+            <p>Premium benefits, spotlight ads, and events access.</p>
+            <a href="#gold-modal">More Info</a>
+          </div>
+        </aside>
+      </div>
     </div>
-    <!-- Membership card -->
+  </main>
 
-    <aside>
-      <div>
-        <h3>NP Membership</h3>
-        <p>Free Membership</p>
-      </div>
-      <div>
-        <h3>Bronze Membership</h3>
-        <p>Basic Membership for small business</p>
-      </div>
-      <div>
-        <h3>Silver Membership</h3>
-        <p>intermediate benefits</p>
-      </div>
-      <div>
-        <h3>Gold Membership</h3>
-        <p>Premium benefits total access</p>
-      </div>
-    </aside>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <p><strong>Sandy City Chamber of Commerce</strong><br>
+        835 E 8425 S | Sandy, Utah<br>
+        info@sandycitychamberofcommerce.org<br>
+        (801) 501-0014</p>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-left">
-        <p><strong>Sandy City Chamber of Commerce</strong><br>
-          835 E 8425 S | Sandy, Utah<br>
-          info@sandycitychamberofcommerce.org<br>
-          (801) 501-0014</p>
-      </div>
+    <div class="footer-social">
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    </div>
 
-      <div class="footer-social">
-        <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-      </div>
+    <div class="footer-right">
+      <p>WDD231 Class Project<br>Efrey Guzman - <span id="year"></span><br>
+        &copy; Sandy City Chamber of Commerce<br>
+        Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
 
-      <div class="footer-right">
-        <p>WDD231 Class Project<br>Efrey Guzman - <span id="year"></span><br>
-          &copy; Sandy City Chamber of Commerce<br>
-          Last Modification: <span id="lastModified"></span></p>
-      </div>
-    </footer>
-
-    <script src="js/home.js"></script>
+  <script>
+    // Timestamp hidden field
+    document.getElementById('timestamp').value = new Date().toISOString();
+  </script>
+  <script src="js/home.js"></script>
 </body>
 
 </html>
